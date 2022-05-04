@@ -1,0 +1,838 @@
+Changeset User              Date       Comment
+--------- ----------------- ---------- --------------------------------------------------------------------------------
+156743    Hui, Benjamin     12/9/2021  2021-12-09  Updated the join:  from reservefeed.dbo.ARP_Raw_data As A  left join
+156740    Hui, Benjamin     12/8/2021  2021-12-08 Added   --2021-12-08 Ben: 4Q2021 for 'INTUIT' = -177    WHEN greatpla
+156739    Hui, Benjamin     12/8/2021  2021-12-08 Added   --2021-12-08 Ben: 4Q2021 for 'INTUIT' = -177    WHEN greatpla
+156738    Hui, Benjamin     12/8/2021  2021-12-08 Ben:   Added GPC -177 for INTUIT
+156730    Hui, Benjamin     12/7/2021  removoed "dbo." in     1. from FRD..vQ3_2021_data   2. from FRD..vQ3_2021_STAT  
+156729    Hui, Benjamin     12/6/2021  1. removed the extra comma after:  and A.GreatPlainsCode in (''756''),  2.  remo
+156728    Hui, Benjamin     12/6/2021  commented out the 2nd part of the script which is not used.  
+156726    Hui, Benjamin     12/6/2021  This is a one time use sproc for Nick Alverson's CN Prgms change for GPC = 756  
+156725    Hui, Benjamin     12/6/2021  Enable the block for 4Q2021 only.  comment out after 4Q:    -- 2021-12-03 Ben:  
+156723    Hui, Benjamin     12/6/2021  2021-12-03 Ben:  for 4Q2021 ONLY, prior data for select GPC(756) comes from a se
+156722    Hui, Benjamin     12/3/2021  4Q2021 roll-forward
+156719    Hui, Benjamin     12/2/2021  4Q2021     Updated it to say consistent  with update on the "R_code_logic.sql" s
+156718    Hui, Benjamin     12/2/2021  4Q2021 roll-forward    Changes were made for the CN Programs  Search for the com
+156717    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156716    Hui, Benjamin     12/2/2021  4Q2021    change the line for "one month over end of prior QTR "    from 10/30/2
+156715    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156714    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156713    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156712    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156711    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156710    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156709    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156708    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156707    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156706    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156705    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156704    Hui, Benjamin     12/2/2021  4Q2021 roll-forward  
+156703    Hui, Benjamin     12/2/2021  4Q2021 roll-forward
+156702    Hui, Benjamin     12/2/2021  4Q2021 roll-forward
+156684    Hui, Benjamin     11/30/2021 4Q roll-forward.
+156683    Hui, Benjamin     11/30/2021 2021-11-30  Changed from CREATE PROCEDURE to ALTER PROCEDURE.
+156682    Hui, Benjamin     11/30/2021 2021-11-30  I noticed the Deductible side of the where clause where GPCs are not
+156681    Hui, Benjamin     11/30/2021 2021-11-30  Per Nick Alverson, see email From: Alverson, Nick <NAlverson@archins
+156653    Krasner, Reuvain  10/29/2021 Updated Year fields to integer data type so that inequality filters can be appli
+156651    Krasner, Reuvain  10/29/2021 Updated PrevQtr and PrevYr Rep measures so that current eval is based on filter 
+156636    Krasner, Reuvain  10/25/2021 Added Unearned Premium measure
+156628    Krasner, Reuvain  10/21/2021 Revised Experience Import to handle Canada files
+156604    Krasner, Reuvain  10/20/2021 Added new data flow task to import experience from IBNR files.
+156603    Krasner, Reuvain  10/19/2021 Update Claim Count measures
+156601    Hui, Benjamin     10/18/2021 2021-10-18  In preparation for 4Q2021.  I have clear the formulae out in "Discou
+156599    Krasner, Reuvain  10/18/2021 Calc Items Incremental and Link Ratio now support AY_Age
+156598    Krasner, Reuvain  10/18/2021 Added Primary_XS calc column. Added select Property BU personel to Users role. M
+156593    Krasner, Reuvain  10/14/2021 Fixed data type of Treaty_ID in Manual Participation Import
+156592    Krasner, Reuvain  10/13/2021 Add a step to clear tables before loading them from DM.
+156582    Krasner, Reuvain  10/12/2021 Latest Property model updates
+156561    Hui, Benjamin     9/20/2021  changed from <> to NOT LIKE:    and isnull(RawDataSource,'''') not like ''%Disco
+156560    Hui, Benjamin     9/20/2021  change from <> to:  and isnull(RawDataSource,'''') not like ''%Discount%''  
+156559    Hui, Benjamin     9/20/2021  2021-09-20   Ben: Implement an emergency fix to exclude all discount out of ARP 
+156558    Hui, Benjamin     9/20/2021  2021-09-20   Ben: Implement an emergency fix to exclude all discount out of ARP 
+156555    Krasner, Reuvain  9/17/2021  Update Age limit and Eval Date parameter in SQL query
+156554    Hui, Benjamin     9/16/2021  2021-09-19  Addded default values,  they are necessary because the sproc is bein
+156552    Hui, Benjamin     9/14/2021  2021-09-14  change the line   "left join dbo.GPC_Map_21Q1_to_21Q2 " to     "left
+156550    Hui, Benjamin     9/14/2021  2021-09-14  Updated R_code script needs corrresponding update in the R_code reco
+156549    Hui, Benjamin     9/14/2021  2021-09-14   Changed per Diana Bochnik's email Sent: Monday, August 16, 2021 4:4
+156548    Krasner, Reuvain  9/14/2021  Add Commission column and measure.
+156547    Krasner, Reuvain  9/14/2021  Disable Lender LDF data flow. No longer needed.
+156546    Hui, Benjamin     9/13/2021  2021-09-13  Checking ARP file using changeset 156538 and replace changeset 15653
+156539    Hui, Benjamin     9/9/2021   The command button went out of control in their size.  They had to be re-adjuste
+156538    Hui, Benjamin     9/9/2021   2021-09-09  Worked with Miles Westrich to update formula in the "Dashboard:    B
+156526    Hui, Benjamin     9/7/2021   Bug fix for Diana's     The two lines below were updated with the correct index 
+156525    Hui, Benjamin     9/7/2021   2021-09-07  Updated ULAE data in the ULAE tab for 3Q2021  
+156524    Hui, Benjamin     9/7/2021   3Q2021   Updated Line 14
+156522    Hui, Benjamin     9/7/2021   3Q2021   Changed Lines 13 and 14
+156521    Hui, Benjamin     9/7/2021   3Q2021 roll forward   changed Line 13 and 14
+156520    Hui, Benjamin     9/7/2021   3Q2021 roll forward
+156519    Hui, Benjamin     9/7/2021   3Q2021 roll forward
+156518    Hui, Benjamin     9/7/2021   3Q2021  change Line 108 to "vq3_2021"
+156516    Hui, Benjamin     9/7/2021   3Q2021 roll-forward  Adjusted Line 30 to 03/01/2021
+156515    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156514    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156513    Hui, Benjamin     9/7/2021   3Q2021 roll-forward  Correct Line 22 from 9/1/2021 to 7/1/2021
+156512    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156511    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156510    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156509    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156508    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156507    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156506    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156505    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156504    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156503    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156502    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156501    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156500    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156499    Hui, Benjamin     9/7/2021   3Q2021 roll-forward
+156470    Hui, Benjamin     9/2/2021   2021-09-02  Per Diana Bochnik's email request on [Sent: Monday, August 16, 2021 
+156469    Hui, Benjamin     9/2/2021   2021-09-02  Added to two fields per Diana Bochnik's email on Tue 8/17/2021 9:37 
+156444    Krasner, Reuvain  8/24/2021  Add Source_System to fact tables and join to Source dimension.
+156438    Krasner, Reuvain  8/20/2021  Update Treaty Import to get Treaty Year in integer format
+156414    Krasner, Reuvain  8/12/2021  Added WP Wtd Avg calc item.
+156407    Krasner, Reuvain  8/9/2021   Added CY EP and CQ EP for use in SPEED PTR exhibit.
+156401    Krasner, Reuvain  8/4/2021   Updates to handle CAT-specific LDFs (for Property). Expected Emergence and Impli
+156399    Krasner, Reuvain  8/3/2021   Fix Expected Emergence measures to compute expected CAT emergence even when ther
+156380    Krasner, Reuvain  7/29/2021  Initial check-in
+156375    Krasner, Reuvain  7/27/2021  Latest Changes
+156357    Krasner, Reuvain  7/20/2021  Add In-Force Date table and calc group
+156356    Krasner, Reuvain  7/19/2021  Rebuild Date Dimensions as query-based instead of calc tables.
+156355    Krasner, Reuvain  7/19/2021  Add Acc Year calc item to Years with Subtotals calc group.
+156352    Krasner, Reuvain  7/16/2021  Added Link Ratio calc item
+156347    Krasner, Reuvain  7/15/2021  Add AY Age Calc Basis calc group
+156342    Krasner, Reuvain  7/13/2021  Update Ratio calc items to use cumulative premium in denominator.
+156341    Krasner, Reuvain  7/12/2021  Fix relationship w Acc_Date table.
+156340    Krasner, Reuvain  7/12/2021  Update UY Age calcs in Premium table.
+156337    Krasner, Reuvain  7/9/2021   Partition Premium table
+156333    Krasner, Reuvain  7/6/2021   Fix UY Age Calc Basis CG
+156332    Krasner, Reuvain  7/6/2021   Age calc updates
+156323    Krasner, Reuvain  6/25/2021  Added stage import of Experience db file
+156306    Krasner, Reuvain  6/18/2021  Fix Acq Exp PrevQtr v2 measure for UY total row.
+156305    Hui, Benjamin     6/18/2021  2021-06-18  This was rollforwared for 2Q2021.  Additionally, I made a few  few c
+156302    Hui, Benjamin     6/17/2021  2021-06-17  change the debug.print from * to &, because I was concatenating a st
+156301    Krasner, Reuvain  6/17/2021  Update expesne ratio to handle FRD Acq expense ratio from prev qtr where program
+156286    Krasner, Reuvain  6/11/2021  Update EvalDate parameter
+156285    Krasner, Reuvain  6/11/2021  Update EvalDate variable
+156283    Hui, Benjamin     6/10/2021  2021-06-10  change per Diana instruction: [Sent: Tuesday, June 8, 2021 10:01 AM]
+156282    Hui, Benjamin     6/10/2021  2021-06-10  changed from CREATE PROCEDURE to ALTER PROCEDURE.  This is the first
+156281    Hui, Benjamin     6/10/2021  2021-06-10  per Diana's request, from email [Sent: Tuesday, June 1, 2021 12:18 P
+156280    Krasner, Reuvain  6/10/2021  Update Policy source query to handle 3 policies with incorrect info in EDW.
+156273    Hui, Benjamin     6/7/2021   2021-06-07  Updated for 2Q2021  GPC=-174,  modified  GPC = -176, added  GPC = 75
+156267    Hui, Benjamin     6/7/2021   22021-06-07  Added new GPC code -176 for new program "NSM CHAMP"  
+156263    Hui, Benjamin     6/5/2021   2021-06-05   Added for GPC 1070, 'E&S Casualty SME Solutions', per documentation
+156262    Hui, Benjamin     6/5/2021   2021-06-05   Added  'E&S Casualty SME Solutions' for GPC 1070 per Diana's email 
+156261    Hui, Benjamin     6/4/2021   2021-06-04  Incorporating the revised R_code script for 2Q2021 into the recon sc
+156260    Hui, Benjamin     6/4/2021   2021-06-04   Added GPC 1070 per Diana Bochnik's email [Sent: Friday, April 23, 2
+156254    Hui, Benjamin     6/3/2021   2021-06-03  Removed an extra comma and changed "Data.asl" to "A.asl" in the CAT 
+156253    Hui, Benjamin     6/3/2021   2021-06-03  Adjusted the CAT Case statment in the SELECT and GROUP BY clause per
+156252    Hui, Benjamin     6/3/2021   Just indented some more code, no other changes, same as Changeset 156249
+156249    Hui, Benjamin     6/3/2021   2021-06-03  Forgot to roll-forward in the previous changeset 156248, in the new 
+156248    Hui, Benjamin     6/3/2021   2021-06-03  Per Diana Bochnik's request, changes were made to the sproc.  New fi
+156247    Krasner, Reuvain  6/3/2021   Update data source query for Exposure table to include Exposure OIDs from Claima
+156245    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward
+156244    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward
+156243    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward
+156242    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward
+156241    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward  
+156240    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward  
+156239    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward  
+156238    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward
+156237    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 Quarterly roll-forward
+156236    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forward
+156235    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forward
+156234    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forward
+156233    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forward  
+156232    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forward
+156231    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forwarded  
+156230    Hui, Benjamin     6/2/2021   2021-06-02  2Q2021 Quarterly roll-forward
+156228    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 quarterly roll-forward
+156227    Hui, Benjamin     6/2/2021   2021-06-02   2Q2021 roll-forwarded.
+156220    Hui, Benjamin     6/1/2021   2021-06-01    Per Diana's request, see her mail on [Sent: Friday, April 23, 2021
+156219    Krasner, Reuvain  6/1/2021   Add Loss_Limit table and limited loss measures.
+156210    Krasner, Reuvain  5/26/2021  Modify Cumulative calc item to use Min_Acctg_Date_in_Context
+156204    Krasner, Reuvain  5/25/2021  Fixed CAT logic to account for Arch CAT Codes  '--', '0'
+156203    Krasner, Reuvain  5/25/2021  Added Arch & Source Transaction Date to Premium & Claim_Trans tables. Added Tran
+156201    Krasner, Reuvain  5/21/2021  Fix relationship between Treaty and Participation
+156195    Krasner, Reuvain  5/20/2021  Added data conversion and FEIN to Reinsurer import. Added Manual Participation i
+156176    Krasner, Reuvain  5/14/2021  Added Mnaual_Treaty_Import to project
+156175    Krasner, Reuvain  5/14/2021  Add Treaty_ID_Txt to the Participation import
+156173    Krasner, Reuvain  5/14/2021  Added Treaty_Yr_Txt derived column to output to destiniation.
+156169    Krasner, Reuvain  5/13/2021  Handle data conversion for error values
+156168    Krasner, Reuvain  5/13/2021  Import SDF Contract table
+156166    Krasner, Reuvain  5/12/2021  Added measures for Frequency, Severity, TIV.
+156152    Krasner, Reuvain  5/11/2021  Update Diagram View
+156149    Krasner, Reuvain  5/11/2021  Fix Ratio to WP definition to utilize intellisense to get the measure name (It s
+156148    Krasner, Reuvain  5/11/2021  Adjust grain of Premiu table. Add Ratio to WP calc item. Add Claim Count variati
+156145    Krasner, Reuvain  5/10/2021  Ratio measure group w/ dynamic format string
+156137    Krasner, Reuvain  5/7/2021   Added AY logic to Cumulative calc item.
+156136    Krasner, Reuvain  5/7/2021   Property
+156130    Krasner, Reuvain  5/4/2021   Ceded Re connection updates
+156123    Krasner, Reuvain  5/3/2021   Initial check-in
+156122    Krasner, Reuvain  5/3/2021   Add GPC Import
+156121    Krasner, Reuvain  5/3/2021   Calc group for incremental/cumulative.
+156118    Krasner, Reuvain  4/30/2021  Added Participation & Broker imports
+156117    Krasner, Reuvain  4/29/2021  Added Reisnurer Import
+156115    Krasner, Reuvain  4/29/2021  Initial check-in of packages.
+156114    Krasner, Reuvain  4/29/2021  Restricted Claim_Trans to only claims ultimately attached to Property policy.
+156113    Krasner, Reuvain  4/28/2021  Add Age columns, dimensions and relationships.
+156102    Krasner, Reuvain  4/27/2021  Add SSIS items
+156101    Krasner, Reuvain  4/27/2021  Add Ceded Re SSIS
+156097    Hui, Benjamin     4/26/2021  2021-04-26  This latest check in contains the changes formula change from Diana 
+156054    Krasner, Reuvain  4/14/2021  TOAD VC settings.
+156053    Krasner, Reuvain  4/14/2021  Added folder $/ArchTeam/ActuarialBIDM/ToadSettings
+156051    Krasner, Reuvain  4/14/2021  Update SSIS Packages: LDFs, Policy_Maps
+156034    Krasner, Reuvain  4/13/2021  Update measures [Rep L_ALAE PrevQtr] and [Rep L_ALAE PrevYr] to remove any conte
+156010    Krasner, Reuvain  4/6/2021   Initial check in. Includes Exposure table.
+155989    Krasner, Reuvain  4/5/2021   Update server name in connection to CPP_SQL
+155980    Hui, Benjamin     3/31/2021  2021-03-31  Mufaro Pazvakawambwa broght to my attention about cell formula in [A
+155970    Hui, Benjamin     3/23/2021  2021-03-23  1. Changes were made in the [Lenders_AY_Exhibit] tab.  As a result o
+155965    Krasner, Reuvain  3/17/2021  Update ReportTriangles dataset DAX source query to wrap filter expression on [UW
+155962    Hui, Benjamin     3/16/2021  1Q2021    Additional formulas were found needing to adjust.  See below:    In Su
+155957    Hui, Benjamin     3/15/2021  1Q2021   This is v6   From speaking with Miles, changed various formula to inclu
+155943    Hui, Benjamin     3/15/2021  1Q2021   TriangleCriteriaRangeBegin           =DashboardDSUM!$D$215:$D$762  CHAN
+155937    Hui, Benjamin     3/14/2021  2021-03-14    Additional formulas were updated and added under Name Manager in t
+155936    Hui, Benjamin     3/12/2021  1Q2021 This is v4 of the qurter.  It includes formula updates to the Triangle na
+155932    Hui, Benjamin     3/12/2021  2021-003-12    Fill in formulas for a few missing cells in   1. Dashboard Triang
+155921    Hui, Benjamin     3/10/2021  1Q2021 quarterly roll-forward, FRD.dbo.q1_2021_stat_ibnr_grid was updated.
+155920    Hui, Benjamin     3/10/2021  1Q2021,   1. hide the Normalized Summary tabs and   2. resized the LiveFeed butt
+155919    Hui, Benjamin     3/10/2021  1Q2021 Fixed formulas in [R_Input2] tab in the 2021 row in cells R24:U24,   - ch
+155913    Hui, Benjamin     3/9/2021   1Q2021 Quarterly update for Alt Mkt per Elaine Gil's email from Sent: Thursday, 
+155912    Hui, Benjamin     3/9/2021   1Q2021 Quarterly updated.  Added 'HABPRO'  = GPC '-174',  'STARTSURE' = GPC = '-
+155911    Hui, Benjamin     3/9/2021   1Q2021 Quarterly update.  Added 'HABPRO'  = GPC '-174',  'STARTSURE' = GPC '-175
+155910    Hui, Benjamin     3/9/2021   1Q2021 Quarterly update.  Added 'HABPRO'=gpc -174 and 'STARTSURE' = gpc -175
+155909    Hui, Benjamin     3/9/2021   1Q2021 quarterly update.  Added GPC -174 and -175  
+155908    Hui, Benjamin     3/9/2021   1Q2021 update for Farmers and GPC codes as follow:    GPC R_Code  -174 HabPro  -
+155907    Hui, Benjamin     3/9/2021   1Q2021 quarter update with new GPC code for HABPRO = -174 and STARTSURE = -175  
+155906    Hui, Benjamin     3/9/2021   1Q2021 updates on additional formulas I found 
+155904    Krasner, Reuvain  3/8/2021   Add Current Quarter column to Eval_Date table to support persisting the filter f
+155901    Krasner, Reuvain  3/8/2021   Update Sel Ult measures to point to v5 optimized version.
+155887    Hui, Benjamin     3/2/2021   1Q2021 roll-forward  
+155886    Hui, Benjamin     3/2/2021   1Q2021 roll-forward
+155885    Hui, Benjamin     3/2/2021   changed @eval_date from 03/30/2021' to '03/31/2021'
+155884    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155883    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155882    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward  
+155881    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155880    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155879    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155878    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155877    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155876    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward  
+155875    Hui, Benjamin     3/2/2021   1Q2021 roll-forward
+155874    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155873    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155872    Hui, Benjamin     3/2/2021   1Q2021 quarterly roll-forward
+155871    Hui, Benjamin     3/2/2021   1Q2021 roll-forward
+155870    Hui, Benjamin     3/2/2021   1Q2021 quarter roll-forward.   Be careful because we are rolling forward the yea
+155869    Hui, Benjamin     3/2/2021   1Q2021 roll-forward
+155863    Hui, Benjamin     3/1/2021   This is the version for 2021.  New rows and columns for year 2021 have been adde
+155862    Hui, Benjamin     3/1/2021   This is the original copy at the end of 4Q2020.  This copy is prior to any 2021 
+155809    Krasner, Reuvain  2/8/2021   Added new Farmers policies to R_Code script.
+155805    Krasner, Reuvain  2/5/2021   Updated data type to Decimal(30,4) for financial columns in user variables that 
+155752    Krasner, Reuvain  1/29/2021  Delete table showing Latest Acctg Period. Add measure to display Latest Acctg Pe
+155751    Krasner, Reuvain  1/29/2021  Unhide Acctg_Date dimension. Twaek date range expression in Acctg_Date dimension
+155673    Krasner, Reuvain  1/7/2021   Updated SelectedBusinessSegment measure to reflect CAT selection.
+155666    Krasner, Reuvain  1/4/2021   Saved services account credentials into data source connection.
+155665    Krasner, Reuvain  1/4/2021   Add filter to parameter datasets of HasPricingData = 1
+155638    Krasner, Reuvain  12/23/2020 Remove reference to PTR_Test and Triangle rdl
+155637    Krasner, Reuvain  12/23/2020 Update the OverwriteDataSources property in the report project
+155636    Krasner, Reuvain  12/23/2020 Rename updated report targeting updated AS model.
+155635    Krasner, Reuvain  12/23/2020 Added role for service account and grnated Admin rights needed by PBI Gateway.
+155629    Krasner, Reuvain  12/21/2020 Correct AM Specialty criteria.
+155628    Krasner, Reuvain  12/21/2020 2020 Q4 Updates with added filter step for UY, Gross, Reported
+155573    Krasner, Reuvain  12/12/2020 Added Freberg
+155572    Krasner, Reuvain  12/12/2020 Add literal record for NSM WCS 2020
+155571    Hui, Benjamin     12/11/2020 2020-12-11  Added a comment on top on running Factor-only refresh.  
+155570    Krasner, Reuvain  12/11/2020 2020 Q4 Updates
+155569    Krasner, Reuvain  12/11/2020 2020 Q4 updates
+155558    Krasner, Reuvain  12/10/2020 Added Prev Period Rep LR measures. Also includes tuned version of LNE measures.
+155544    Hui, Benjamin     12/9/2020  2020-12-09  Roll-forward update applied to:  INSERT INTO FRD.dbo.q4_2020_stat_ib
+155521    Hui, Benjamin     12/8/2020  2020-12-08  After added new GPC (-173), there was an extra comma and it needed t
+155506    Hui, Benjamin     12/7/2020  2020-12-07  Added GPC (-173) for 'PROHOST'  
+155503    Hui, Benjamin     12/7/2020  2020-12-07  Added 'PROHOST' per documentation.
+155502    Hui, Benjamin     12/7/2020  2020-12-07  Added 'PROHOST' for GPC(-173)  Changeset 155495  is not correct.  Th
+155501    Hui, Benjamin     12/7/2020  
+155499    Hui, Benjamin     12/7/2020  2020-12-07    1. Created for new GPC 'PROHOST'.    2. Check into TFS per Igor's 
+155497    Hui, Benjamin     12/7/2020  2020-12-07    1. Created for new GPC 'PROHOST'.    2. Check into TFS per Igor's 
+155496    Hui, Benjamin     12/7/2020  2020-12-07  1. Updated for R_Code 'PROHOST' as Diana.  2. also adjusted roll-for
+155495    Hui, Benjamin     12/7/2020  2020-12-07  Added 'PROHOST' for GPC(-173)  Changeset 155495  is not correct.  Th
+155490    Hui, Benjamin     12/7/2020  2020-12-07 Added the following:    greatplainscode in ('-173') then rtrim(ltrim(
+155481    Hui, Benjamin     12/4/2020  2020-12-04  No changes, just hide/collapsed year 2021 rows and change the quarte
+155480    Hui, Benjamin     12/4/2020  2020-12-04  Year 2021 inserted in the following tabs:    Visible sheets:  Contro
+155449    Hui, Benjamin     12/2/2020  2020-12-02  Line 109, should point to prior quarter   Line 214, should point to 
+155435    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155434    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155430    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.  
+155429    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155428    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied. 
+155427    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied. 
+155426    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155425    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155424    Hui, Benjamin     11/30/2020 2020-11-30   4Q2020 roll-forward applied.
+155423    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155422    Hui, Benjamin     11/30/2020 2020-11-30  4Q2020 roll-forward applied.
+155420    Hui, Benjamin     11/25/2020 2020-11-25  4Q2020 roll-forward applied.
+155419    Hui, Benjamin     11/25/2020 2020-11-25  4Q2020 roll-forward applied.
+155418    Hui, Benjamin     11/25/2020 2020-11-25  4Q2020 roll-forward applied.  
+155417    Hui, Benjamin     11/25/2020 2020-11-25  4Q2020 roll-forward applied.
+155416    Hui, Benjamin     11/25/2020 2020-11-25  4Q2020 roll-forward
+155415    Hui, Benjamin     11/25/2020 2020-11-25  4Q2020 roll-forward
+155414    Hui, Benjamin     11/25/2020 2020-11-25  Roll-forward to 4Q2020 in lines 699 and 1412
+155413    Hui, Benjamin     11/25/2020 2020-11-25   Added per Igor from email on Thursday, November 12, 2020 2:38 PM   
+155385    Krasner, Reuvain  11/18/2020 Experience_LR views
+155376    Krasner, Reuvain  11/17/2020 Latest PTR model before perfomrance improvements.
+155372    Hui, Benjamin     11/17/2020 2020-11-17    Jira ACT-413  [pdf_printing] module, in Sub pdf_print()  A string 
+155360    Krasner, Reuvain  11/16/2020 Update CBS logic for seg 1 & 2.
+155313    Krasner, Reuvain  11/11/2020 Update scripts for new CBS segmentation.
+155312    Krasner, Reuvain  11/11/2020 Update New2 version to work with PTR_Test.
+155148    Krasner, Reuvain  10/29/2020 Latest updates including performance improvement testing for [Sel Ult LNE] measu
+154946    Hui, Benjamin     10/14/2020 2020-10-14  Refer to Jira ACT-406.  Changes requested  by user Marc Rothman:    
+154908    Krasner, Reuvain  10/12/2020 Add service account to UserName criteria in DELETE statement.
+154907    Krasner, Reuvain  10/12/2020 Update server of CBO price monitor and add predicate to DELETE statement WHERE U
+154660    Krasner, Reuvain  9/17/2020  Added Seg_2 logic to segment out premium accruals and TPA fees.
+154645    Krasner, Reuvain  9/15/2020  Exclude AM Specialty Non-GL in base query
+154644    Krasner, Reuvain  9/15/2020  ETL process tweaks
+154643    Krasner, Reuvain  9/15/2020  Added logic for 2020 yr for AM Specialty Non-GL
+154628    Hui, Benjamin     9/14/2020  2020-09-14  The ALTER PROCEDURE portion of the sproc was not updated to the prod
+154618    Krasner, Reuvain  9/14/2020  Add data source for XSBOX and New2 version pointing to XSBOX source.
+154613    Krasner, Reuvain  9/14/2020  Update ReserveFeed connection to use FRDSQL (not SQL16).  Update eval date in LD
+154582    Hui, Benjamin     9/11/2020  Made sure ULAE are the same  
+154581    Hui, Benjamin     9/11/2020  2020-09-11  I disabled the "Update Comments" because I asked Diana and Nick prev
+154576    Krasner, Reuvain  9/10/2020  Add Country to EA FS exception logic.
+154574    Krasner, Reuvain  9/10/2020  Added condition for EA to be US only.
+154573    Hui, Benjamin     9/10/2020  2020-09-10  I am checking in this version from Elaine Wang and Miles Westrich, i
+154571    Krasner, Reuvain  9/10/2020  Generate LDF_Code that's specific to Seg_1 for EA FS.
+154570    Krasner, Reuvain  9/10/2020  Add logic for EA FS to generate an LDF_code that's specific to PTR_Segent_1.
+154508    Hui, Benjamin     9/3/2020   2020-09-03  Updated ULAE tab data with new data provided by user Miles Westrich.
+154446    Krasner, Reuvain  9/1/2020   Modify filter context of [Ult WP Latest Eval in FRD] to ignore PY_Age.
+154443    Krasner, Reuvain  8/31/2020  Made call to Casualty fixes conditional on BusinessDivision parameter.
+154441    Krasner, Reuvain  8/31/2020  Updates to Rate Chg Import
+154440    Krasner, Reuvain  8/31/2020  Utilize optional parameters for BusinessDivision and Subdivision.
+154439    Krasner, Reuvain  8/31/2020  Add optional parameters for BusinessDivision and Subdivision.
+154437    Hui, Benjamin     8/30/2020  2020-08-30  1. Ran SP_ARP_MAIN_CONSTR_Prior.sql with "dbo.ARP_Raw_data_Constr.sq
+154436    Hui, Benjamin     8/30/2020  2020-08-30  Per Igor, change back from:    FROM Frd.dbo.vq3_2020_Data_AY_Cube_Su
+154435    Hui, Benjamin     8/30/2020  2020-08-30  Tidy up the code code abit by lining up the code and comments.  Only
+154434    Hui, Benjamin     8/30/2020  Q3 2020 roll-forward changes.
+154431    Hui, Benjamin     8/28/2020  2020-08-28  Please refer to Jira ACT-398.  User Miles Westrich confirmed the cha
+154411    Hui, Benjamin     8/25/2020  2020-08-25  3Q2020 quarterly roll-forward applied.
+154399    Hui, Benjamin     8/24/2020  2020-08-24  Reverting back to the 3Q2020 roll-forward to ldf_3Q20, after testing
+154395    Hui, Benjamin     8/24/2020  2020-08-24  Because the ldf_3Q20 is not yet created, I have to have to use use l
+154392    Krasner, Reuvain  8/21/2020  Add Policy_Year field.
+154390    Krasner, Reuvain  8/21/2020  Add Policy_Year field.
+154385    Hui, Benjamin     8/21/2020  2020-08-21  Roll-forward for 3Q2020.  Updated the 7th date from top
+154384    Hui, Benjamin     8/21/2020  2020-08-21  Needed to update third date before 3Q2020 roll-forward
+154382    Krasner, Reuvain  8/21/2020  Add separate statements for Travel and non-Travel
+154352    Krasner, Reuvain  8/20/2020  Initial check-in
+154351    Krasner, Reuvain  8/20/2020  Disable CopyData step. This can be handled via manual import from XSBOX01.
+154347    Hui, Benjamin     8/20/2020  2020-08-20    Added comments for the JOIN condition because of a hard coded date
+154332    Hui, Benjamin     8/18/2020  3Q2020 roll forward applied  Changed to FRD.dbo.vQ2_2020_Data_AY_Cube and to FRD
+154329    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied. Changed to ldf_3Q20
+154328    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied. Changed to dbo.vq3_2020_reservedev
+154325    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied. Changed to dbo.vq3_2020_Data
+154324    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied. Changed to dbo.q3_2020_stat_ibnr_grid and dbo.q3_20
+154323    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.  Changed to FRD.dbo.vQ3_2020_Stat
+154322    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.  Changed to FRD.dbo.vq3_2020_STAT
+154321    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.  Changed to FRD.dbo.vq3_2020_STAT
+154318    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.  changed dbo.vq2_2020_Data_AY_Cube_Summary to dbo.v
+154316    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.
+154315    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.
+154314    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.
+154313    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.
+154312    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied.
+154311    Hui, Benjamin     8/17/2020  3Q2020 roll forward applied
+154310    Hui, Benjamin     8/17/2020  2020-08-17  Per Jira Jira ACT-382, I updated the book choice dropdown in the Mai
+154305    Krasner, Reuvain  8/13/2020  Modified formula for [MaxPricingEvalDate] to ignore filter from Eval_Date dimens
+154281    Krasner, Reuvain  8/11/2020  Update connection to FRD WIP to utilize FRDSQL alias
+154280    Krasner, Reuvain  8/11/2020  Udated to identify EA Primary AAM & HFL
+154275    Krasner, Reuvain  8/11/2020  Add CBS Import package
+154231    Krasner, Reuvain  8/5/2020   Hide LOB column in Exposure table until formula expression is ready.
+154230    Krasner, Reuvain  8/5/2020   Updates to Exposure table to include Class Description
+154225    Krasner, Reuvain  8/4/2020   Added UY_Age and AY_Age columns and dimensions
+154162    Krasner, Reuvain  7/29/2020  Updated Expense and ULAE + TPA Ratio measures to return blank when CAT slicer is
+154149    Hui, Benjamin     7/27/2020  2020-07-27  with varchar(max):    sql     sql2  9215   5120               with n
+154115    Hui, Benjamin     7/22/2020  2020-07-22    01. Dynamic SQL string truncation persisted.  02. The following ch
+154110    Hui, Benjamin     7/22/2020  2020-07-22  In addition to pre-concatenate the right side of the dynamic SQL str
+154109    Hui, Benjamin     7/22/2020  2020-07-22  DO NOT use   Changeset 154109  Changeset 154096  Changeset 154086   
+154096    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154109  Changeset 154096  Changeset 154086   
+154095    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154095  Changeset 154091  Changeset 154087   
+154094    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154094  Changeset 154093    The changes still
+154093    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154094  Changeset 154093    The changes still
+154092    Hui, Benjamin     7/21/2020  2020-07-21   Pre-concatenated the right hand side of the dynamic sql to ensure i
+154091    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154095  Changeset 154091  Changeset 154087   
+154090    Hui, Benjamin     7/21/2020  2020-07-21  I also changed   declare @sql varchar(max) to --> declare @sql nVarC
+154089    Hui, Benjamin     7/21/2020  2020-07-21  pre-concatenate the right side of the dynamic SQL string to (max) be
+154088    Hui, Benjamin     7/21/2020  2020-07-21  Pre-concatenated the right hand side of the dynamic sql to ensure it
+154087    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154095  Changeset 154091  Changeset 154087   
+154086    Hui, Benjamin     7/21/2020  2020-07-22  DO NOT use   Changeset 154109  Changeset 154096  Changeset 154086   
+154070    Krasner, Reuvain  7/20/2020  Update measure expressions for Sel Ult to iterate over UY so that total is corre
+154035    Krasner, Reuvain  7/15/2020  Increase width of WP Ann column to prevent wrapping to 2nd line.
+153944    Krasner, Reuvain  7/7/2020   Update Freberg Petroleum mapping to truncate Policy Number to right 12 character
+153923    Krasner, Reuvain  7/6/2020   Modify column name of Prem_Denom
+153920    Krasner, Reuvain  7/6/2020   Add slicer table and modify measure to support user dynamically selecting the pr
+153878    Krasner, Reuvain  7/1/2020   Update import from prior to 2009
+153822    Krasner, Reuvain  6/26/2020  Fized blank page
+153821    Krasner, Reuvain  6/26/2020  Remove WP column
+153814    Krasner, Reuvain  6/25/2020  Added TaxesFees to FRD Aqcuisition Expense
+153806    Krasner, Reuvain  6/25/2020  Add ULAE column, hide WP, adjust width to ensure 2 pages
+153788    Krasner, Reuvain  6/24/2020  Add page break, shrink footer height
+153787    Krasner, Reuvain  6/24/2020  Fix body width to avoid blank page generation
+153783    Krasner, Reuvain  6/24/2020  Widened AvE % columns
+153768    Krasner, Reuvain  6/24/2020  Adjusted [Expense Ratio] and [Combined Ratio] measures to ensure [ULAE + TPA Fee
+153767    Krasner, Reuvain  6/24/2020  Fix expense measures calc for Programs. [FRD Ult Acquisition Expense PrevQtr for
+153758    Krasner, Reuvain  6/23/2020  ULAE & TPA Fee measures to add to Programs
+153729    Krasner, Reuvain  6/22/2020  Rename source for Freberg Petroleum mapping to Policy Decisions
+153716    Krasner, Reuvain  6/19/2020  Widened Expense Ratio column.
+153715    Krasner, Reuvain  6/19/2020  Added Expense Ratio, moved Comb Ratio, removed ROC.
+153713    Krasner, Reuvain  6/19/2020  Udate to  heading to show BD | SD | R_Code
+153704    Krasner, Reuvain  6/18/2020  Start Age in triangle section dynamic for Programs.  Business Segmentation label
+153703    Krasner, Reuvain  6/18/2020  Chnaged OpEx table connection to SQL Server source
+153699    Krasner, Reuvain  6/18/2020  Adding DELETE command to to avoid loading duplicate records.
+153690    Krasner, Reuvain  6/18/2020  Moved DELETE command to beginning and add semicolon
+153688    Krasner, Reuvain  6/18/2020  Added DELETE command prior to inserting records.
+153681    Krasner, Reuvain  6/18/2020  Added filter for latest ebaluation date
+153677    Krasner, Reuvain  6/17/2020  Tighten up code formatting
+153676    Krasner, Reuvain  6/17/2020  Wrapped BusinessDivision & Subdivision rferences in the predicate with ISNULL to
+153675    Krasner, Reuvain  6/17/2020  Simplified Paragon Winery logic
+153668    Hui, Benjamin     6/17/2020  2020-06-17  Added "Paragon Winery"
+153655    Krasner, Reuvain  6/17/2020  Update param value for 2020 Q2 and rename table destination for McNeil ESIP Care
+153647    Hui, Benjamin     6/17/2020  2020-06-17  Added comments on top regarding what steps to comment out when doing
+153596    Hui, Benjamin     6/16/2020  2020-06-16  For quarter roll-forward updated.  
+153594    Krasner, Reuvain  6/16/2020  Removed filter on WP<>0. Uniqueness constraint will be handled by column index.
+153586    Krasner, Reuvain  6/15/2020  Filter out zero WP grouped records
+153580    Krasner, Reuvain  6/15/2020  OpEx Ratio
+153577    Krasner, Reuvain  6/15/2020  Added logic to handle GPC = 100
+153572    Krasner, Reuvain  6/15/2020  
+153571    Krasner, Reuvain  6/15/2020  Split dynamic SQL into 3 variables to avoid truncation
+153552    Krasner, Reuvain  6/12/2020  Apply ISNULL to Hurricane field reference.
+153551    Krasner, Reuvain  6/12/2020  Apply ISNULL to Hurricane field reference.
+153550    Krasner, Reuvain  6/12/2020  Apply ISNULL to Hurricane field reference.
+153549    Krasner, Reuvain  6/12/2020  Apply ISNULL to Hurricane field reference
+153540    Krasner, Reuvain  6/12/2020  Add ISNULL to Hurricane reference and add COVID logic to GROUP BY clause.
+153538    Hui, Benjamin     6/12/2020  2020-06-12  Adding 'PARAGON WINERY'    Note also 'Paragon Winery' is part of P&C
+153537    Krasner, Reuvain  6/12/2020  Wrapped reference to Hurricane field in ISNULL
+153534    Krasner, Reuvain  6/12/2020  Removing comments from proc to shorten length so it fits into string variable.
+153524    Krasner, Reuvain  6/11/2020  Exclude COVID-19 CAT=Y
+153523    Krasner, Reuvain  6/11/2020  Fixed missing AND
+153519    Krasner, Reuvain  6/11/2020  Add COVID-19 logic
+153518    Krasner, Reuvain  6/11/2020  Add COVID-19 logic.
+153517    Krasner, Reuvain  6/11/2020  Add COVID-19 logic.
+153515    Krasner, Reuvain  6/11/2020  Fix commented out assignment of @SQL variable
+153514    Krasner, Reuvain  6/11/2020  Change to ALTER statements
+153513    Krasner, Reuvain  6/11/2020  Inclusion of COVID-19 for all BUs & ASLs
+153510    Krasner, Reuvain  6/11/2020  Fixed refernce to CAT column.
+153508    Krasner, Reuvain  6/11/2020  Add logic to exclude COVID-19 CAT-Y data from Construction and D&E procedures.
+153507    Krasner, Reuvain  6/11/2020  Change to ALTER statement
+153504    Krasner, Reuvain  6/11/2020  Added logic to exclude all COVID-19 CAT=Y
+153499    Hui, Benjamin     6/11/2020  2020-06-11  Updated the quarter in the two lines:    from FRD.dbo.vQ2_2020_STAT 
+153498    Hui, Benjamin     6/11/2020  2020-06-11  Added the below to two section for Paragon.    WHEN RTRIM(LTRIM(sect
+153496    Hui, Benjamin     6/11/2020  2020-06-10  Added the below When clause for Paragon     WHEN RTRIM(LTRIM(section
+153471    Hui, Benjamin     6/10/2020  2020-06-10  Updated to FRD.dbo.vq2_2020_STAT in the script
+153470    Hui, Benjamin     6/10/2020  2019-06-10  This is based on Changeset 151396, after 4Q2019.  The goal was to re
+153466    Hui, Benjamin     6/10/2020  2019-06-10  This is based on Changeset 151703, after 4Q2019.  The goal was to re
+153465    Hui, Benjamin     6/10/2020  2019-06-10  This is based on Changeset 151329, after 4Q2019 with only change "Al
+153444    Krasner, Reuvain  6/10/2020  Successful load
+153442    Hui, Benjamin     6/10/2020  2020-06-10  In this version, updated ULAE percentages for 2Q2020.  No other chan
+153432    Krasner, Reuvain  6/9/2020   PQ Source import for ES Property price monitor
+153428    Krasner, Reuvain  6/9/2020   New Solution
+153417    Hui, Benjamin     6/9/2020   2020-06-08  Update 2Q2020  
+153416    Hui, Benjamin     6/9/2020   2020-06-08  Update to 2Q2020  
+153398    Hui, Benjamin     6/9/2020   2020-06-07,   I forgot to check in yesterday Igor's request for   adding a new m
+153384    Hui, Benjamin     6/8/2020   2020-06-08  Change, removing the period:  'IMA BEDROCK PIC. GL'   'IMA BEDROCK P
+153352    Krasner, Reuvain  6/5/2020   Create FRD Acq Exp measures to shift to previous eval date and prior UY for late
+153333    Krasner, Reuvain  6/4/2020   Final measure for acquisition expense component
+153313    Krasner, Reuvain  6/3/2020   Revise ESIP Career logic to default to Non-Career if ther's no match to the mapp
+153306    Krasner, Reuvain  6/3/2020   Update Seg_2 logic to join to new ESIP_Career table based on FRD_Policy_Number w
+153300    Hui, Benjamin     6/2/2020   2020-06-02  Also cleared "Original Model Version" in cell A37 in Main tab.  
+153298    Hui, Benjamin     6/2/2020   2020-06-02  In this version, Igor also advised I clear the timestamps.  I clear 
+153294    Hui, Benjamin     6/2/2020   2020-06-02  In this version, minor prep work was made in Main tab, in cell B2, t
+153290    Krasner, Reuvain  6/2/2020   Update ESIP Career import to materialize FRD_Policy_Number column with padded ze
+153274    Krasner, Reuvain  6/1/2020   Added join logic for McNeil ESIP Career/Non-Career split
+153250    Hui, Benjamin     5/29/2020  Applied account changes:    OLYMPUS GROUP CAPTIVE PGM    IMA BEDROCK PIC.
+153249    Mehta, Vishal     5/29/2020  Added Alt Mrkts accounts for Q2 2020
+153239    Hui, Benjamin     5/28/2020  update made for 2Q2020
+153229    Krasner, Reuvain  5/28/2020  Hide objects
+153228    Mehta, Vishal     5/28/2020  Q2 2020 Changes
+153218    Mehta, Vishal     5/27/2020  
+153213    Mehta, Vishal     5/27/2020  Career/Non-Career split logic
+153125    Mehta, Vishal     5/21/2020  
+153123    Krasner, Reuvain  5/21/2020  Create role to grant permission.
+153105    Mehta, Vishal     5/20/2020  Changed recon logic for projected_LR
+153078    Mehta, Vishal     5/20/2020  
+153077    Hui, Benjamin     5/20/2020  Q2 2020 changes applied
+153076    Mehta, Vishal     5/20/2020  
+153075    Hui, Benjamin     5/20/2020  Q2 2020 changes applied
+153074    Hui, Benjamin     5/20/2020  Q2 2020 changes applied
+153073    Mehta, Vishal     5/20/2020  
+153072    Hui, Benjamin     5/20/2020  Q2 2020 changes applied  
+153062    Hui, Benjamin     5/19/2020  Q2 2020 changes applied  
+153061    Hui, Benjamin     5/19/2020  Q2 2020 changes applied
+153060    Hui, Benjamin     5/19/2020  Q2 2020 changes applied
+153059    Hui, Benjamin     5/19/2020  Q2 2020 changes applied
+153057    Hui, Benjamin     5/19/2020  Q2 2020 changes
+153056    Hui, Benjamin     5/19/2020  Q2 2020 changes
+153011    Krasner, Reuvain  5/14/2020  Created relationship from Claim (accident state) to PremiumState table.
+153010    Krasner, Reuvain  5/14/2020  Added Acc_Date table and created relationship to Claim table.
+153008    Krasner, Reuvain  5/14/2020  Modified data source query for Claim_Trans to filter on Acctg period <= 202003
+152974    Mehta, Vishal     5/13/2020  
+152970    Krasner, Reuvain  5/13/2020  Update relationship from Claim_Trans to Tran_Date.
+152963    Mehta, Vishal     5/13/2020  
+152962    Mehta, Vishal     5/12/2020  
+152946    Mehta, Vishal     5/11/2020  
+152943    Krasner, Reuvain  5/11/2020  Added a [Premium Denominator] measure. Fixed up measure grid. Fixed up layout of
+152931    Hui, Benjamin     5/8/2020   2020-05-08  This version is for the Jira ACT-322, changing Excel data Connection
+152928    Mehta, Vishal     5/8/2020   Renamed CBO to CBS
+152927    Mehta, Vishal     5/8/2020   Fixed Claims query
+152920    Mehta, Vishal     5/8/2020   
+152919    Mehta, Vishal     5/8/2020   Added GPC = 5011 for ventus segmentation
+152917    Krasner, Reuvain  5/8/2020   Adding logic in Segment_1 script for E&S Property to idenntify Ventus business.
+152913    Hui, Benjamin     5/7/2020   2020-05-07  This version address Jira ACT-316.  There are 31 connections I ran a
+152892    Mehta, Vishal     5/7/2020   Changed Ult WP logic
+152876    Mehta, Vishal     5/6/2020   Added Paid & Reported Loss measures & Ratios
+152869    Hui, Benjamin     5/6/2020   added CAT and NYLL columns in Claims table  Added Paid L_ALAE, Case L_ALAE, Rep 
+152855    Mehta, Vishal     5/5/2020   
+152845    Mehta, Vishal     5/5/2020   Initial wrapper code
+152822    Mehta, Vishal     5/4/2020   
+152821    Mehta, Vishal     5/4/2020   
+152819    Mehta, Vishal     5/4/2020   added Staging table to PTR
+152800    Krasner, Reuvain  5/1/2020   Update deployment DB name
+152799    Krasner, Reuvain  5/1/2020   Change solution and project folder location reference
+152798    Krasner, Reuvain  5/1/2020   Change solution name
+152797    Krasner, Reuvain  5/1/2020   Change folder name
+152796    Krasner, Reuvain  5/1/2020   Changed project name, modified column names and measure names, added Rate Change
+152772    Hui, Benjamin     4/30/2020  Build Rate Change Model  
+152744    Hui, Benjamin     4/29/2020  2020-04-29  In this version, user Marc Rothman also asked for an additional chan
+152735    Hui, Benjamin     4/28/2020  2020-04-28  In this version, Jira ACT-305 is addressed.    >>Column EM of the ‘A
+152712    Hui, Benjamin     4/28/2020  Added Claim_Trans table and hided both Claims and Claim_Trans table.
+152711    Mehta, Vishal     4/28/2020  Added Eff Date table & Claim table
+152694    Hui, Benjamin     4/27/2020  2020-04-27  In this version, I updated for the formulae in workshet "Selection R
+152616    Krasner, Reuvain  4/22/2020  Modify Premium query for development, hide table objects, format date and number
+152535    Mehta, Vishal     4/17/2020  
+152518    Mehta, Vishal     4/16/2020  
+152476    Mehta, Vishal     4/14/2020  Setup
+152432    Mehta, Vishal     4/13/2020  
+152423    Mehta, Vishal     4/13/2020  
+152422    Mehta, Vishal     4/13/2020  Initial
+152340    Mehta, Vishal     4/8/2020   
+152336    Mehta, Vishal     4/7/2020   
+152318    Hui, Benjamin     4/7/2020   2020-04-07   In this version, the formulae error is fixed for   [Normalized Summ
+152313    Mehta, Vishal     4/7/2020   
+152309    Mehta, Vishal     4/7/2020   
+152308    Mehta, Vishal     4/7/2020   
+152306    Mehta, Vishal     4/7/2020   
+152305    Krasner, Reuvain  4/7/2020   Update DAX query for CBO price monitor import to use measures [Ren Prem Used] & 
+152267    Mehta, Vishal     4/6/2020   
+152241    Mehta, Vishal     4/3/2020   parameters changes
+152235    Mehta, Vishal     4/3/2020   
+152222    Mehta, Vishal     4/2/2020   
+152220    Mehta, Vishal     4/2/2020   
+152118    Mehta, Vishal     3/27/2020  
+152117    Mehta, Vishal     3/27/2020  
+152056    Mehta, Vishal     3/26/2020  
+152045    Hui, Benjamin     3/25/2020  2020-03-25  In this version, we addressed Jira ACT-287 and 288 by re-writing the
+152013    Hui, Benjamin     3/24/2020  2020-03-24:    In this version we addressed:  1. Jira ACT-289  Deduct Summary ta
+151991    Mehta, Vishal     3/23/2020  
+151977    Hui, Benjamin     3/23/2020  For some reason I was not able to open file after I craeted Changeset 151977, it
+151952    Mehta, Vishal     3/20/2020  
+151943    Hui, Benjamin     3/19/2020  2020-03-19, in this version, Jira ACT-282:    In all the formula which have a ha
+151942    Hui, Benjamin     3/19/2020  2020-03-19, in this version:  Jira ACT-290 is committed.  User Kevin Wong report
+151938    Mehta, Vishal     3/19/2020  
+151899    Mehta, Vishal     3/18/2020  Exclude AON agentCode since it had duplicate R_Code
+151892    Krasner, Reuvain  3/18/2020  Removing testing calc columns after resolving duplictae record in Prog_Yr table.
+151870    Krasner, Reuvain  3/18/2020  Add Frequency Measure
+151855    Hui, Benjamin     3/17/2020  2020-03-17 In this version:    Kevin Wong reported a problem with his Travel boo
+151848    Mehta, Vishal     3/17/2020  Initial Version
+151832    Hui, Benjamin     3/16/2020  2020-03-16.  In this version, thanks to Miles Westrich, Miles alerted me to two 
+151809    Hui, Benjamin     3/13/2020  2020-03-13 In this version:  cells with no formulae in Summary tab for Year 2020
+151807    Krasner, Reuvain  3/13/2020  Modify data source query to Eval_Date to dynamically return the needed evaluatio
+151803    Mehta, Vishal     3/13/2020  added claim rollup table in the logic
+151799    Hui, Benjamin     3/12/2020  2020-03-12 Ben, in this version:  #1  In  consultation with RK, it appears an ex
+151794    Hui, Benjamin     3/12/2020  2020-03-12,  In this version:  The dropdown name reference formulae is not picki
+151784    Hui, Benjamin     3/11/2020  In this version:  01. Updated ULAE per Miles Westrich  02. Fixed print PDF spill
+151724    Hui, Benjamin     3/10/2020  For this version:  I made a change to Sub ClearLookup() and the calling routine.
+151716    Hui, Benjamin     3/10/2020  In this version:  Changeset 151715    item 1 was not saved.  I resaved and check
+151715    Hui, Benjamin     3/10/2020  In this version Bugs:  00. I have to put code in there to make sure all the colu
+151703    Mehta, Vishal     3/9/2020   Modified logic for Exposure Year case statement
+151698    Hui, Benjamin     3/9/2020   2020-03-09, in this version, Miles Westrich made some changes to the Discount an
+151686    Mehta, Vishal     3/6/2020   New queries for Cognos exhibits
+151685    Mehta, Vishal     3/6/2020   Added ALT MRKT account
+151667    Krasner, Reuvain  3/5/2020   Add ClaimSatatus and ClaimSize columns to data source query for FRD_Data.
+151649    Mehta, Vishal     3/5/2020   Fixed column name for Policy symbol
+151648    Mehta, Vishal     3/5/2020   
+151628    Hui, Benjamin     3/4/2020   Just removed a blank space.
+151626    Hui, Benjamin     3/4/2020   In this version:  Made a slight adjustment in the comment for the Comments tab.
+151581    Hui, Benjamin     3/2/2020   For this version:  The first check-in for user UAT for 1Q2020.  For "Normalized 
+151569    Mehta, Vishal     3/2/2020   Changed code E&S Property to split seg_1 to PHH & All Other
+151567    Mehta, Vishal     3/2/2020   Added Farmer Polices for GPC 4060
+151565    Hui, Benjamin     3/2/2020   In this version:  I added at the end of the document what tabs Marc Rothman uses
+151553    Hui, Benjamin     2/28/2020  For this version:  There are no significant changes.  I only added additional co
+151545    Mehta, Vishal     2/27/2020  Change Claimcount logic
+151534    Mehta, Vishal     2/27/2020  changed ClaimsInd logic ref. RK
+151512    Mehta, Vishal     2/26/2020  Modified logic for claim counts
+151484    Mehta, Vishal     2/26/2020  Added more measures & renamed the proc
+151447    Mehta, Vishal     2/24/2020  Changes applied for Deduct offset
+151398    Mehta, Vishal     2/20/2020  Q1 2020 Changes
+151397    Mehta, Vishal     2/20/2020  Q1 2020 changes
+151396    Mehta, Vishal     2/20/2020  Q1 2020 Changes
+151384    Mehta, Vishal     2/19/2020  Q1 2020 Change
+151383    Mehta, Vishal     2/19/2020  Q1 2020 Changes
+151382    Mehta, Vishal     2/19/2020  Q1 2020 Changes
+151381    Mehta, Vishal     2/19/2020  Q1 2020 Changes
+151380    Mehta, Vishal     2/19/2020  Q1 2020 Changes
+151379    Mehta, Vishal     2/19/2020  Q1 2020 Changes
+151378    Mehta, Vishal     2/19/2020  Q1 2020
+151377    Mehta, Vishal     2/19/2020  Q1 2020 changes
+151376    Mehta, Vishal     2/19/2020  Q1 2020 changes
+151375    Mehta, Vishal     2/19/2020  Rolled Forward for Q1 2020
+151374    Mehta, Vishal     2/19/2020  Date changed to Q1 2020
+151368    Hui, Benjamin     2/19/2020  In this version:  I am checking in documentation comments added in the two routi
+151337    Mehta, Vishal     2/18/2020  Initial Version Q4 2019
+151336    Mehta, Vishal     2/18/2020  
+151329    Mehta, Vishal     2/18/2020  Initial Version Q4 2019
+151286    Mehta, Vishal     2/13/2020  
+151285    Mehta, Vishal     2/13/2020  test check 1
+151281    Mehta, Vishal     2/13/2020  
+151277    Mehta, Vishal     2/13/2020  Initial Version as of Q4 2019
+151242    Mehta, Vishal     2/12/2020  Proc loads Claim_Size data
+151093    Krasner, Reuvain  2/6/2020   Test checkin
+151091    Krasner, Reuvain  2/6/2020   Test
+151086    Krasner, Reuvain  2/6/2020   Test from new laptop
+151059    Krasner, Reuvain  2/5/2020   Update formula in FRD_Data[PDF] to include GCC in the special logic for programs
+151054    Mehta, Vishal     2/5/2020   
+151044    Krasner, Reuvain  2/5/2020   Modified logic in calculation for Age, UY_Age, Eval_Date_FK to include include N
+151028    Mehta, Vishal     2/4/2020   For Freberg decided to use subdivision instead of AgentCode and we had to rerun 
+151024    Mehta, Vishal     2/4/2020   Look for Filename in tmp.Projected_LR table as well for archiving & deleteing
+151005    Krasner, Reuvain  2/3/2020   Modify data source query for Eff_Date table to handle max date dynamically.
+150987    Mehta, Vishal     1/31/2020  
+150966    Mehta, Vishal     1/30/2020  EA Changes
+150965    Krasner, Reuvain  1/30/2020  Set UY to Do Not Summarize
+150950    Hui, Benjamin     1/29/2020  In this version for Jira ACT-145:  I added two additional lines in addition .Scr
+150929    Hui, Benjamin     1/28/2020  Jira ACT-173 is addressed in this version, formulae in the Controls! tab in the 
+150913    Mehta, Vishal     1/27/2020  
+150908    Hui, Benjamin     1/27/2020  Jira ACT-145  This story is meant to speed the slow down caused by the formulae 
+150902    Mehta, Vishal     1/27/2020  added logic for Prgms_LOB to active
+150900    Krasner, Reuvain  1/27/2020  Modify LDFs source query to directly reference LDF_Code from vw_LDFs.
+150898    Krasner, Reuvain  1/27/2020  Add Country to all tables. Update BusinessKey column to SegmentKey and modify fo
+150837    Mehta, Vishal     1/22/2020  Changed SegmentKey Column logic
+150788    Hui, Benjamin     1/21/2020  In this version, for Jira ACT-144:  Additional cosmetic changes in the "Tabular 
+150783    Mehta, Vishal     1/20/2020  Q4 2019 changes - Surety, 6710,5011,6116, 6312 and  E&S Construction & specialty
+150774    Mehta, Vishal     1/19/2020  Changed back LDF Code logic 
+150773    Hui, Benjamin     1/17/2020  In this version:  Jira ACT-134, in the Dashboard tab, in cell A28, user Marc Rot
+150772    Hui, Benjamin     1/17/2020  In this version:  I made adjustment to the Discount and Tabular Discount tabs ta
+150771    Hui, Benjamin     1/17/2020  In this version:  Jira ACT-132 and 165 tested and completed by user - Thanh Mai.
+150737    Mehta, Vishal     1/16/2020  
+150726    Mehta, Vishal     1/15/2020  
+150714    Mehta, Vishal     1/15/2020  Added country column and changed the business key logic
+150712    Mehta, Vishal     1/15/2020  
+150710    Mehta, Vishal     1/15/2020  added country column
+150701    Hui, Benjamin     1/15/2020  In this version:  01. For some reason Jira ACT-144 was not implemented completel
+150675    Mehta, Vishal     1/14/2020  Added Country Column
+150666    Mehta, Vishal     1/14/2020  Added Country Column
+150661    Mehta, Vishal     1/14/2020  since Seg1 value will be same as R_Code we do not need this
+150651    Hui, Benjamin     1/13/2020  In this version:  --------------------------------------------------------------
+150598    Hui, Benjamin     1/9/2020   In this version, I am checking back in the formulae change in the "Lookup...End"
+150596    Hui, Benjamin     1/9/2020   There is some locking issues.  Excel keeps shutting down when I tried to open th
+150595    Hui, Benjamin     1/9/2020   In this version, I am checking back in the formula change in the "Lookup...End" 
+150529    Krasner, Reuvain  1/3/2020   Add previous policy update script
+150496    Mehta, Vishal     1/2/2020   
+150479    Hui, Benjamin     12/31/2019 01. Need to include entirety of the Book Choice (file grouping) even for Canada 
+150435    Mehta, Vishal     12/26/2019 Added Column names since a new column was add in LDF Reserving
+150434    Mehta, Vishal     12/26/2019 
+150431    Krasner, Reuvain  12/23/2019 Added comments to explain the ETL change for Railroad.
+150429    Mehta, Vishal     12/23/2019 Removed condition to handle duplicate Railroad r_code
+150404    Hui, Benjamin     12/19/2019 2019-12-19  In this version, per Jira ACT-154 - Disable VBA code associated with
+150384    Hui, Benjamin     12/18/2019 In this version, Jira ACT-155 is implemented.    Existing  [Discount] and [Tabul
+150382    Hui, Benjamin     12/18/2019 In this version, Jira ACT-134 is addressed:    01. Two name ranges were created:
+150373    Hui, Benjamin     12/18/2019 This version contains:    2019-12-17 BH Jira ACT-153, changed sproc name:   In t
+150367    Mehta, Vishal     12/17/2019 
+150366    Hui, Benjamin     12/17/2019 Purpose: Jira ACT-144  2019-12-17  ACT-144 undo Jira ACT-143 for opening up colu
+150320    Hui, Benjamin     12/13/2019 This version contains Jira ACT-151.    01. In the Main tab, the Book Choice drop
+150315    Hui, Benjamin     12/12/2019 This version implemented in module [Procedures], Sub PopulateAllFormulas():  01.
+150307    Mehta, Vishal     12/12/2019 
+150302    Mehta, Vishal     12/12/2019 Excluding Canada
+150300    Krasner, Reuvain  12/12/2019 Update logic in HasPricingData calculated column to ensure that UYs prior to 201
+150267    Hui, Benjamin     12/11/2019 Per RK email below:    From: Krasner, Reuvain <RKrasner@archinsurance.com>   Sen
+150262    Hui, Benjamin     12/10/2019 Due to Quarter End Code Freeze and per user Miles Westrich explicit instruction,
+150236    Mehta, Vishal     12/9/2019  Removed Space from 'PUA'
+150233    Hui, Benjamin     12/9/2019  Jira ACT-143:    In this version, in the [Analysis] tab, in column FC, the cells
+150229    Krasner, Reuvain  12/9/2019  Modify Combined Ratio and ROC measures to show blank when CAT Yes/No is filtered
+150228    Krasner, Reuvain  12/9/2019  Modify LNE measures to iterate over individual segments.  Add CAT table, and mod
+150222    Hui, Benjamin     12/9/2019  This version updates two named range lookup formula back to original.  It was re
+150217    Hui, Benjamin     12/9/2019  In Analysis tab, column AR1, the formula was changed somehow, it was just report
+150206    Hui, Benjamin     12/6/2019  This version contains the ROLLBACK of Jira ACT-141, resulting in slowdowns users
+150192    Hui, Benjamin     12/5/2019  A Top and Bottom margin change was made to "Summary" tab from 0.75 to 0.5 to fix
+150178    Krasner, Reuvain  12/5/2019  Act 129, Act 133 for developers only, other misc
+150177    Hui, Benjamin     12/4/2019  This version addresses Jira ACT-128, which was largely re-written to independent
+150159    Hui, Benjamin     12/3/2019  This version contains a one bug fix.  I was dispaying Ceded in the Net in the fo
+150151    Hui, Benjamin     12/2/2019  Additional changes for JIRA ACT-126  01. per reuvain krasner:      Please do not
+150149    Krasner, Reuvain  12/2/2019  Make CAT column visible
+150117    Hui, Benjamin     11/26/2019 This version contains revisions for multiple Jira items:  Act 126  This should b
+150083    Krasner, Reuvain  11/25/2019 Added Implied LDF measures for Current, PrevQtr, and PrevYr
+150049    Hui, Benjamin     11/22/2019 Jira ACT#133 completed.  Code provided by RKrasner.
+150024    Hui, Benjamin     11/21/2019 Updated with new comments mod_BH_Notes module  
+150020    Hui, Benjamin     11/21/2019 Per Reuvain, truncating the version number on the file on TFS but he will add ap
+150008    Mehta, Vishal     11/20/2019 
+150007    Krasner, Reuvain  11/20/2019 Modify Start_Age calc so that it return 12 instead of 0.
+149996    Krasner, Reuvain  11/20/2019 Include condition in WHER clause and join condition.
+149995    Krasner, Reuvain  11/20/2019 Update logic to exclude duplicate records for Railroad due to multiple subdivisi
+149984    Krasner, Reuvain  11/19/2019 Add Start_Age measure to dynamically change the Ages shown in the triangle for P
+149980    Krasner, Reuvain  11/19/2019 Revisions to logic for PL
+149976    Krasner, Reuvain  11/19/2019 Add table prefix to column references
+149975    Krasner, Reuvain  11/19/2019 Add condition to eliminate recrods for Railroad that are not part of E&S Special
+149972    Mehta, Vishal     11/19/2019 PL changes
+149965    Mehta, Vishal     11/19/2019 
+149956    Hui, Benjamin     11/18/2019 Jira ACT#127 completed  
+149955    Krasner, Reuvain  11/18/2019 Update Age calculation to use [Evaluation Date] instead of the now discontinued 
+149954    Hui, Benjamin     11/18/2019 v02 contains Jira Act#126 completed and partial Jira ACT#127  
+149953    Hui, Benjamin     11/18/2019 Thiis is the base 4Q2019 ARP file with no changes made to it.  This is the file 
+149952    Hui, Benjamin     11/18/2019 
+149951    Hui, Benjamin     11/18/2019 v02 initial  
+149950    Hui, Benjamin     11/18/2019 
+149949    Hui, Benjamin     11/18/2019 1
+149948    Mehta, Vishal     11/18/2019 
+149918    Krasner, Reuvain  11/15/2019 Remove ISNUL( ,'-') from text fields.
+149917    Mehta, Vishal     11/14/2019 For Casualty subdivision name was changed
+149916    Krasner, Reuvain  11/14/2019 Update subdivision for Accident & Disability
+149915    Krasner, Reuvain  11/14/2019 Add MaxPricingEvalDate measure
+149914    Krasner, Reuvain  11/14/2019 Add SelectedBusinessSegment measure for report header.
+149909    Krasner, Reuvain  11/14/2019 
+149886    Krasner, Reuvain  11/13/2019 Changing PTR data source connection to use new Dev server.
+149883    Mehta, Vishal     11/13/2019 Changed Detail table names
+149867    Mehta, Vishal     11/12/2019 code changes for Q3 2019  
+149835    Mehta, Vishal     11/11/2019 
+149834    Mehta, Vishal     11/11/2019 
+149829    Mehta, Vishal     11/11/2019 Q2 2019 Final
+149776    Krasner, Reuvain  11/7/2019  Add condition BU = E&S Casualty for join to CPP mapping table.
+149775    Krasner, Reuvain  11/7/2019  Fix handling of 090. Add segmentation for Accident. Add segmentation for PL. Con
+149770    Mehta, Vishal     11/6/2019  Freberg was missing in the output
+149767    Krasner, Reuvain  11/6/2019  Update PrevQtr and PrevYr LR measures to use [Ult WP Latest Eval in FRD] ind eno
+149765    Krasner, Reuvain  11/6/2019  Updated Expected Emergence formulas to use [Ult WP Latest Eval in FRD]
+149764    Mehta, Vishal     11/6/2019  
+149751    Krasner, Reuvain  11/6/2019  Latest updated to Pricing tables
+149740    Mehta, Vishal     11/5/2019  
+149705    Krasner, Reuvain  11/5/2019  Updated tables
+149685    Krasner, Reuvain  11/4/2019  Compatibility verification
+149678    Krasner, Reuvain  11/4/2019  Bim.layout file
+149676    Krasner, Reuvain  11/4/2019  Add bim.layout file
+149675    Krasner, Reuvain  11/4/2019  Initial move to TFS.
+149671    Mehta, Vishal     11/4/2019  Changed Daigle (ASL - 090,341) logic to show IM
+149645    Krasner, Reuvain  11/1/2019  Remove special logic for ASIP & ESIP NY/Non-NY exclusion.
+149642    Krasner, Reuvain  11/1/2019  Modify Age calc on FRD Data to look for "BISA WCC" instead of just BISA.
+149632    Krasner, Reuvain  11/1/2019  Update LR measures to use [Ult WP Latest Eval in FRD] in denominator.
+149628    Krasner, Reuvain  10/31/2019 Modify [Ult WP Latest Eval in FRD] to show blank when [WP] is blank.
+149627    Krasner, Reuvain  10/31/2019 Added formula driven Eval Date column to be foreign key to Eval Date dimension. 
+149620    Mehta, Vishal     10/31/2019 
+149604    Krasner, Reuvain  10/31/2019 Have separate columns in Experience_LR table for source eval date and qtr end ev
+149601    Mehta, Vishal     10/31/2019 Added Src_EvalDate column to preserve original Evaluation date
+149566    Mehta, Vishal     10/30/2019 
+149557    Krasner, Reuvain  10/30/2019 Update FRD LRs to use [Ult WP Latest] in the denominator.
+149542    Krasner, Reuvain  10/30/2019 Modified to excluded McNeil ESIP records with NY/Non-NY split.
+149523    Krasner, Reuvain  10/29/2019 Modify expected mergence formulas to look at LDF_Code instead of R_Code
+149494    Krasner, Reuvain  10/29/2019 
+149492    Krasner, Reuvain  10/29/2019 Modify logic to identify NSM CSF to use GPC instead of Agent Code.
+149465    Mehta, Vishal     10/28/2019 added function to adjust evaluation date to FRD
+149450    Krasner, Reuvain  10/28/2019 Remove logic splitting Intercon/Non-Intercon for Brownyard WC
+149440    Krasner, Reuvain  10/27/2019 Modify premium development/annualization factor (PDF) to handle programs with PY
+149387    Mehta, Vishal     10/24/2019 
+149384    Mehta, Vishal     10/24/2019 AM Specialty logic change
+149370    Mehta, Vishal     10/24/2019 
+149367    Mehta, Vishal     10/24/2019 
+149300    Mehta, Vishal     10/22/2019 
+149277    Mehta, Vishal     10/22/2019 
+149276    Mehta, Vishal     10/22/2019 
+149191    Mehta, Vishal     10/17/2019 
+149068    Mehta, Vishal     10/10/2019 
+149067    Mehta, Vishal     10/10/2019 
+149061    Mehta, Vishal     10/10/2019 
+149058    Krasner, Reuvain  10/10/2019 Remove filter on BU, add ISNULL( ,'') on PTR segments, clean up formatting.
+149015    Mehta, Vishal     10/9/2019  
+149014    Mehta, Vishal     10/9/2019  
+148972    Krasner, Reuvain  10/7/2019  Updated Age calculation in FRD_Data and Experience_LR tables to ensure Programs 
+148774    Krasner, Reuvain  9/27/2019  Added measures to UAT perspective
+148773    Krasner, Reuvain  9/27/2019  
+148770    Krasner, Reuvain  9/27/2019  Add Users role and granted read access to Actuarial Pricing AD group.
+148750    Mehta, Vishal     9/26/2019  Added PL Farmers policies
+148735    Krasner, Reuvain  9/26/2019  Changing references to BusinessDivision & Subdivision to Rep_BusinessDivision & 
+148723    Mehta, Vishal     9/26/2019  
+148692    Krasner, Reuvain  9/25/2019  Formatting and adding condition for R_Code NOT NULL
+148686    Mehta, Vishal     9/24/2019  Initial Version
+148685    Mehta, Vishal     9/24/2019  Added LDF Code logic
+148684    Krasner, Reuvain  9/24/2019  Added CAT LR measure that weights actuals from FRD with pricing CAT loads.
+148640    Krasner, Reuvain  9/23/2019  Modify view to build BusinessKey concatenation on the fly.
+148633    Mehta, Vishal     9/23/2019  Commented out Seg_1 assignment for Property
+148583    Krasner, Reuvain  9/20/2019  Added Expected & Actual Emergence, & AvE % measures.
+148563    Krasner, Reuvain  9/19/2019  Actual Emergence and AvE measures in dollars.
+148545    Krasner, Reuvain  9/19/2019  Modify Expected Emergence measures to work in the context of multiple BusinesssK
+148491    Krasner, Reuvain  9/18/2019  Testing Measures for Emergence, Add Calc column for LDF_Code
+148273    Krasner, Reuvain  9/11/2019  Merge from Experimental branch
+148260    Krasner, Reuvain  9/11/2019  Surplus, Return, ROC measures, with fix for denominator in Sel Ult L_ALAER measu
+148160    Mehta, Vishal     9/6/2019   study abroad Policy Symbol codes moved to Accident RCode
+148150    Krasner, Reuvain  9/5/2019   Added Expense ratio measures from Pricing and FRD.
+148086    Krasner, Reuvain  9/4/2019   Added PrevQtr & PrevYr  Ratio measures
+148065    Krasner, Reuvain  9/3/2019   Modified Proj measures not to check for age zero since the Ult WP will anyways b
+148049    Krasner, Reuvain  9/3/2019   Prev Qtr and prev Yr Ult measures
+148003    Mehta, Vishal     8/29/2019  
+147843    Krasner, Reuvain  8/23/2019  PrevQ formula
+147839    Krasner, Reuvain  8/23/2019  Cheching in backups of from 8/20/19
+147838    Krasner, Reuvain  8/23/2019  Experimental formula mdoifications for Ult LRs
+147681    Krasner, Reuvain  8/15/2019  Added PFL (Paid Family Leave) for Accident 
+147679    Mehta, Vishal     8/15/2019  Added BusinessDivision & Subdivision as parameter
+147573    Krasner, Reuvain  8/12/2019  Modified Sel Ult L_ALAE Non-CAT LNE to work in context of Eval Date or UY Age.
+147555    Mehta, Vishal     8/12/2019  
+147521    Krasner, Reuvain  8/9/2019   Added basic Severity measure.
+147506    Krasner, Reuvain  8/8/2019   Updated ratio to use [Ult WP Latest Eval] in the denominator.
+147488    Krasner, Reuvain  8/8/2019   Fix Ult WP to ignore CAT filter.    Change Projected_LR table to not have active
+147355    Krasner, Reuvain  8/5/2019   Add column in FRD_Data indicating whether pricing data exists in the Projected_L
+147343    Krasner, Reuvain  8/2/2019   Added last non-empty measures for selected Ult L_ALAE.  Added Ult WP for Latest 
+147325    Krasner, Reuvain  8/1/2019   Add  UY_Age table, columns, relationships.  Add last non-empty (based on Eval_Da
+147235    Mehta, Vishal     7/29/2019  
+147215    Krasner, Reuvain  7/26/2019  Add measures for selected ultimates on the experience period.
+147199    Krasner, Reuvain  7/25/2019  Update query for Segment table to use vw_Segment.
+147198    Krasner, Reuvain  7/25/2019  Add vw_Segment (initial load)
+147197    Krasner, Reuvain  7/25/2019  Added large loss load measures. Update query for Segment table.
+147167    Krasner, Reuvain  7/24/2019  Added Proj Ult Loss measures to model. (Dollars and ratios, Non-CAT, CAT, and To
+147166    Mehta, Vishal     7/24/2019  changed GPC -171 to -153 in the predicate
+147165    Mehta, Vishal     7/24/2019  
+147164    Krasner, Reuvain  7/24/2019  Formatting
+147156    Mehta, Vishal     7/24/2019  
+147149    Krasner, Reuvain  7/23/2019  Add ELSE in Casaulty logic to ensure no NULLS. Added optional BusinessDivision p
+147117    Mehta, Vishal     7/22/2019  Removed '-' from logic
+147102    Krasner, Reuvain  7/22/2019  Added UW_Year table and joined to fact tables.
+147088    Mehta, Vishal     7/19/2019  Updated logic for CN Lender, McNeil, Brownyard & Cypress point
+147003    Krasner, Reuvain  7/17/2019  Fix *Unknown* speliing by Alt Markets
+147000    Krasner, Reuvain  7/16/2019  Add -165, -167 for Paragon
+146985    Krasner, Reuvain  7/16/2019  Add Projected_LR table
+146973    Krasner, Reuvain  7/16/2019  Added Eval_Date and Experience_LR tables.
+146959    Mehta, Vishal     7/15/2019  changed logic to run by evaluation date and use reporting columns
+146803    Krasner, Reuvain  7/8/2019   Remove unnecessary RTRIM(LTRIM))
+146801    Krasner, Reuvain  7/8/2019   Rename with underscore
+146800    Krasner, Reuvain  7/8/2019   Formatting
+146790    Mehta, Vishal     7/3/2019   Added NULLIF conditions for 720 & 4080 GPC where section name and accountname ar
+146783    Mehta, Vishal     7/3/2019   Included healthcare in the main code
+146779    Mehta, Vishal     7/3/2019   Initial Versions
+146778    Mehta, Vishal     7/3/2019   changed the name of the proc to reflect that it also updates segment 3
+146776    Mehta, Vishal     7/3/2019   Changed code to use Ref tables
+146775    Mehta, Vishal     7/3/2019   Changed code to use Ref tables. Need to verify column collations
+146773    Mehta, Vishal     7/3/2019   Modified E&S logic to use mapping table
+146772    Mehta, Vishal     7/3/2019   Renamed the procedure
+146769    Mehta, Vishal     7/3/2019   
+146768    Mehta, Vishal     7/3/2019   Initial Version & added truncate table code for relevant tables
+146762    Mehta, Vishal     7/2/2019   Initial Version
+146731    Krasner, Reuvain  7/1/2019   Added L&LAE measures and claim count measures open/closed.
+146724    Krasner, Reuvain  7/1/2019   Added loss measures, policy count, claim count
+146716    Krasner, Reuvain  6/28/2019  Rename to reflect 2 & 3
+146715    Krasner, Reuvain  6/28/2019  Add Segment 3 logic for Construction Casualty
+146714    Krasner, Reuvain  6/28/2019  Flip logic for Intercon,  include E&S Casualy & CBO
+146705    Mehta, Vishal     6/28/2019  Initial Version
+146683    Mehta, Vishal     6/27/2019  Initial Version
+146670    Krasner, Reuvain  6/27/2019  Added comment to rewrite Casualy logic to be dependent on CPP mapping table.
+146646    Krasner, Reuvain  6/26/2019  Initial version
+146644    Mehta, Vishal     6/26/2019  
+146643    Mehta, Vishal     6/26/2019  Initial Version
+146635    Krasner, Reuvain  6/25/2019  
+146627    Mehta, Vishal     6/25/2019  
+146626    Mehta, Vishal     6/25/2019  
+146595    Krasner, Reuvain  6/21/2019  deleting text view script
+146594    Krasner, Reuvain  6/21/2019  Creating a test view - ACT 9999
+146591    Mehta, Vishal     6/21/2019  
+146590    Mehta, Vishal     6/21/2019  
+146589    Asamoah, James    6/21/2019  

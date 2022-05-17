@@ -1,5 +1,5 @@
 #
-#	Copyright ©2020-2021 WellEngineered.us, all rights reserved.
+#	Copyright Â©2020-2021 WellEngineered.us, all rights reserved.
 #	Distributed under the MIT license: https://opensource.org/licenses/MIT
 #
 

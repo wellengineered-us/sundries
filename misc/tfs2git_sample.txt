@@ -119,8 +119,8 @@ Changeset User              Date       Comment
 156280    Krasner, Reuvain  6/10/2021  Update Policy source query to handle 3 policies with incorrect info in EDW.
 156273    Hui, Benjamin     6/7/2021   2021-06-07  Updated for 2Q2021  GPC=-174,  modified  GPC = -176, added  GPC = 75
 156267    Hui, Benjamin     6/7/2021   22021-06-07  Added new GPC code -176 for new program "NSM CHAMP"  
-156263    Hui, Benjamin     6/5/2021   2021-06-05   Added for GPC 1070, 'E&S Casualty SME Solutions', per documentation
-156262    Hui, Benjamin     6/5/2021   2021-06-05   Added  'E&S Casualty SME Solutions' for GPC 1070 per Diana's email 
+156263    Hui, Benjamin     6/5/2021   2021-06-05   Added for GPC 1070, 'E&SÂ CasualtyÂ SMEÂ Solutions', per documentation
+156262    Hui, Benjamin     6/5/2021   2021-06-05   Added Â 'E&SÂ CasualtyÂ SMEÂ Solutions'Â forÂ GPCÂ 1070Â perÂ Diana's email 
 156261    Hui, Benjamin     6/4/2021   2021-06-04  Incorporating the revised R_code script for 2Q2021 into the recon sc
 156260    Hui, Benjamin     6/4/2021   2021-06-04   Added GPC 1070 per Diana Bochnik's email [Sent: Friday, April 23, 2
 156254    Hui, Benjamin     6/3/2021   2021-06-03  Removed an extra comma and changed "Data.asl" to "A.asl" in the CAT 
@@ -202,7 +202,7 @@ Changeset User              Date       Comment
 155910    Hui, Benjamin     3/9/2021   1Q2021 Quarterly update.  Added 'HABPRO'=gpc -174 and 'STARTSURE' = gpc -175
 155909    Hui, Benjamin     3/9/2021   1Q2021 quarterly update.  Added GPC -174 and -175  
 155908    Hui, Benjamin     3/9/2021   1Q2021 update for Farmers and GPC codes as follow:    GPC R_Code  -174 HabPro  -
-155907    Hui, Benjamin     3/9/2021   1Q2021 quarter update with new GPC code for HABPRO = -174 and STARTSURE = -175  
+155907    Hui, Benjamin     3/9/2021   1Q2021 quarter update with new GPC code forÂ HABPROÂ =Â -174Â andÂ STARTSUREÂ =Â -175  
 155906    Hui, Benjamin     3/9/2021   1Q2021 updates on additional formulas I found 
 155904    Krasner, Reuvain  3/8/2021   Add Current Quarter column to Eval_Date table to support persisting the filter f
 155901    Krasner, Reuvain  3/8/2021   Update Sel Ult measures to point to v5 optimized version.
@@ -501,7 +501,7 @@ Changeset User              Date       Comment
 152796    Krasner, Reuvain  5/1/2020   Changed project name, modified column names and measure names, added Rate Change
 152772    Hui, Benjamin     4/30/2020  Build Rate Change Model  
 152744    Hui, Benjamin     4/29/2020  2020-04-29  In this version, user Marc Rothman also asked for an additional chan
-152735    Hui, Benjamin     4/28/2020  2020-04-28  In this version, Jira ACT-305 is addressed.    >>Column EM of the ‘A
+152735    Hui, Benjamin     4/28/2020  2020-04-28  In this version, Jira ACT-305 is addressed.    >>Column EM of the â€˜A
 152712    Hui, Benjamin     4/28/2020  Added Claim_Trans table and hided both Claims and Claim_Trans table.
 152711    Mehta, Vishal     4/28/2020  Added Eff Date table & Claim table
 152694    Hui, Benjamin     4/27/2020  2020-04-27  In this version, I updated for the formulae in workshet "Selection R
